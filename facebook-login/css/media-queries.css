@@ -1,0 +1,96 @@
+@media screen and (max-width: 500px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15rem;
+  }
+
+    .title-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title-logo {
+        align-self: center;
+        height: 10.6rem;
+    }
+
+    .title-paragraph {
+        text-align: center;
+        font-size: 2.4rem;
+        width: auto;
+    }
+
+    .form-container {
+        max-width: initial;
+        padding: 0;
+        margin: 0;
+    }
+
+    .form {
+        width: 39.6rem;
+    }
+
+    .input-container {
+        height: 5.2rem;
+    }
+
+    .form-input {
+        font-size: 1.7rem
+    }
+
+    .form-log-in-btn {
+        height: 4.8rem;
+        font-size: 2rem;
+    }
+
+    .form-forgot-password {
+        font-size: 1.4rem;
+    }
+
+    .form-create-account-btn {
+        font-size: 1.7rem;
+        line-height: 4.8rem;
+        height: 4.8rem;
+    }
+
+    .create-page-paragraph {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .title-container {
+        padding-bottom: 12rem;
+        margin-right: 5rem;
+        text-align: initial;
+        margin-bottom: 0;
+    }
+
+    .title-logo {
+        left: -30px;
+    }
+}
+
+@media screen and (min-width: 1075px) {
+    .title-container {
+        width: 58rem;
+        padding-bottom: 12rem;
+        padding-right: 15rem;
+        text-align: initial;
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+
+    .title-paragraph {
+        font-size: 2.8rem;
+    }
+}
