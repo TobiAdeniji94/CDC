@@ -1,0 +1,67 @@
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: #333333;
+}
+
+.main-container{
+  margin-top: 2.5rem;
+  border-radius: 10px;
+  padding: 1rem;
+  /* box-shadow: 3px 3px 20px ; */
+}
+
+.color-box{
+  margin: 1rem 0;
+  padding: 100px;
+  border-radius: 50px;
+  /* box-shadow: 3px 3px 3px; */
+}
+
+.button-group{
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  box-shadow: 2px 2px 5px rgb(136,136,204);
+  background-color: rgb(136,136,204);
+  color: white;
+}
+
+button:hover, button:active{
+  filter: brightness(0.8);
+}
+
+button:active{
+  transform: translateY(2px);
+  box-shadow: 0px 0px 0px;
+}
+
+button:disabled{
+  background-color: rgb(156,156,156);
+  box-shadow: 0px 0px 0px;
+  cursor: not-allowed;
+}
+
+.info-text{
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  gap: 5px;
+}
+
+.scoreboard{
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+}
