@@ -1,0 +1,108 @@
+.WrapCard{
+    color: whitesmoke;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    perspective: 1000px;
+    background-color: transparent;
+}
+
+.FlipWrap{
+    transform: rotateY(180deg);
+}
+
+.Card{
+width: 100%;
+height: 100%;
+position: relative;
+transition: transform 0.8s;
+transform-style: preserve-3d;
+}
+
+.FlipCard{
+    transform: rotateY(180deg);
+}
+
+.FrontCard {
+    background-image: url('../../assets/trianglify.png');
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    margin: auto;
+    background-color: rgb(235, 120, 120);
+    box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
+    border-radius: 10px;
+
+}
+
+.Digits{
+  /* background-color: blanchedalmond;   */
+  margin-bottom: 2%;
+}
+
+.Details{
+/* background-color: burlywood; */
+box-sizing: border-box;
+display: flex;
+justify-content: space-between;
+}
+
+.BackCard {
+    position: absolute;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: transform .6s linear;
+    transform: rotateY(180deg);
+    background-image: url('../../assets/trianglify.png');
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.BlackStripe {
+    /* position: relative; */
+    margin-top: 5%;
+    background-color: black;
+    top: 10%;
+    width: 100%;
+    height:20%; 
+}
+
+.Rfid {
+    width: 5%;
+    height: auto;
+    transform: scaleX(-1);
+}
+.body{
+    
+}
+@media (max-width: 426px) {
+    .WrapCard{
+        width: 95%;
+        height: 259px; 
+        margin-top: 5%;
+    }
+}
+@media (min-width: 500px) and (min-height: 401px) {
+    .WrapCard{
+        width: 450px;
+        height: 290px; 
+        margin-top: 50px;
+    }
+}
+@media (min-width: 1000px) and (min-height: 700px) {
+    .WrapCard{
+        width: 450px;
+        height: 290px;
+        margin-top: 70px; 
+    }
+}
+

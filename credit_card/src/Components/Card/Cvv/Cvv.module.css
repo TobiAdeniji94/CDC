@@ -1,0 +1,13 @@
+.WhiteStripe {
+    position: relative;
+    background-color: white;
+    border-radius: 5px;
+    width: 90%;
+    height:15%;
+    align-self: center;
+    color: black;
+}
+
+.Scale{
+    transform: scaleX(-1);   
+}

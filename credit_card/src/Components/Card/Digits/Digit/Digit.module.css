@@ -1,0 +1,11 @@
+.Digit { 
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    margin: 2px;
+    box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
+
+}
+
+

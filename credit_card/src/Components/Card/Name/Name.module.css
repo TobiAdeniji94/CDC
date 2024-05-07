@@ -1,0 +1,49 @@
+.NameContainer{
+    margin-left: 10%;
+}
+.Label{
+    /* display: block; */
+    font-size: 0.8rem;
+}
+
+.Name{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    font-size: 20px;
+
+}
+
+.Digit{
+    margin: 0;
+}
+
+/*
+will run on items added after initial mount
+*/
+.example-enter{
+    opacity:0.5;
+    transform:  rotate(60deg); 
+}
+.example-enter-active{
+    opacity: 1;
+    transform:  rotate(0deg); 
+    /* transition: opacity 150ms ease-out, transform 180ms cubic-bezier(0.71, 0.03, 0.56, 0.85); */
+    transition: all 0.35s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.example-enter-done{
+    opacity: 1;
+
+}
+/* 
+will run on any item being removed
+*/
+.example-exit{
+    opacity: 1;
+    transition: opacity 150ms ease-in, transform 200ms cubic-bezier(0.71, 0.03, 0.56, 0.85);
+    transform: rotate(45deg);
+}
+.example-exit-active{
+    opacity: 0.01;
+}
