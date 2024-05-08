@@ -25,7 +25,7 @@ function App() {
 
   const handleType = (type) => {
     setCardType(type);
-    console.log(type);
+    // console.log(type);
 
     if(type === "visa") {
       setCardTypeUrl(imageUrls[0]);
