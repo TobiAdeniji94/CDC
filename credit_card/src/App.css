@@ -13,7 +13,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  background: #eee;
+  background: #fff;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -33,7 +33,6 @@ body {
   flex-direction: column;
   padding: 1rem;
   border-radius: 10px;
-  box-shadow: 3px 3px 40px #545454e8;
   position: relative;
 }
 
@@ -92,7 +91,7 @@ body {
   left: 0;
   height: 100%;
   width: 0;
-  background-color: #3b2dd2fa;
+  background-color: #d2d22dfa;
   z-index: -1;
 }
 

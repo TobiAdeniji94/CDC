@@ -1,17 +1,3 @@
-// import Layout from './Components/Layout/Layout';
-// import CreditCardBuilder from './Components/CreditCardBuilder/CreditCardBuilder';
-
-// function App() {
-//   return (
-//     <div>
-//       <Layout>
-//         <CreditCardBuilder/>
-//       </Layout>
-//     </div>
-//   );
-// }
-// export default App;
-
 import React, {useState} from 'react';
 import Cleave from 'cleave.js/react';
 
@@ -19,12 +5,10 @@ import 'animate.css';
 import './App.css';
 
 const imageUrls = [
-  "https://logos-world.net/wp-content/uploads/2020/04/Visa-Logo.png",
-  "https://brand.mastercard.com/content/dam/mccom/brandcenter/thumbnails/mastercard_vrt_rev_92px_2x.png",
-  "https://www.discover.com/company/images/newsroom/media-downloads/discover.png",
-  "https://s1.q4cdn.com/692158879/files/design/svg/american-express-logo.svg",
-  "https://cdn4.iconfinder.com/data/icons/simple-peyment-methods/512/diners_club-512.png",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/JCB_logo.svg/1280px-JCB_logo.svg.png"
+  "https://www.svgrepo.com/show/354518/visa.svg",
+  "https://www.svgrepo.com/show/508701/mastercard-full.svg",
+  "https://www.svgrepo.com/show/508416/discover.svg",
+  "https://www.svgrepo.com/show/266068/american-express.svg",
 ]
 
 function App() {
@@ -34,11 +18,9 @@ function App() {
   const [expireMonth, setExpireMonth] = useState('MM');
   const [expireYear, setExpireYear] = useState('YYYY');
   const [cardTypeUrl, setCardTypeUrl] = useState('https://logos-world.net/wp-content/uploads/2020/04/Visa-Logo.png');
-  // const [flip, setFlip] = useState(null);
   
   const handleNum = (e) => {
     setCreditCardNum(e.target.rawValue);
-    // console.log(e.target.value);
   }
 
   const handleType = (type) => {
@@ -47,22 +29,16 @@ function App() {
 
     if(type === "visa") {
       setCardTypeUrl(imageUrls[0]);
-      console.log("Visa")
+      // console.log("Visa")
     } else if(type === "mastercard") {
       setCardTypeUrl(imageUrls[1]);
-      console.log("Mastercard")
+      // console.log("Mastercard")
     } else if(type === "discover") {
       setCardTypeUrl(imageUrls[2]);
-      console.log("Discover")
+      // console.log("Discover")
     } else if(type === "amex") {
       setCardTypeUrl(imageUrls[3]);
-      console.log("Amex")
-    } else if(type === "diners") {
-      console.log("Diners")
-      setCardTypeUrl(imageUrls[4])
-    } else if(type === "jcb") {
-      console.log("JCB");
-      setCardTypeUrl(imageUrls[5]);
+      // console.log("Amex")
     }
   }
   
@@ -78,8 +54,6 @@ function App() {
     setExpireYear(e.target.value);
   }
 
-  // cleave.js logic 
-
   return (
        <div className="container">
         <form id="form">
@@ -90,19 +64,6 @@ function App() {
                       <img className="logo" src={cardTypeUrl} alt="Card logo"/>
                     </div>
                 </div>
-                {/* <div className="body">
-                    <h2 id="creditCardNumber">{creditCardNum}</h2>
-                </div>
-                <div className="footer">
-                    <div>
-                        <h5>Card Holder</h5>
-                        <h3>{cardHolder}</h3>
-                    </div>
-                    <div>
-                        <h5>Expires</h5>
-                        <h3>{expireMonth} / {expireYear}</h3>
-                    </div>
-                </div> */}
             </div>
 
             <div className="input-container mt">
@@ -161,7 +122,7 @@ function App() {
                 </div>
             </div>
 
-            <button>{`Submit ${cardType} payment`}</button>
+            <button>submit</button>
         </form>
     </div>
   );
